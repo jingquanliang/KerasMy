@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 class Parent:        # 定义父类
    parentAttr = 100
    def __init__(self):

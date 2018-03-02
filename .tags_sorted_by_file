@@ -1,0 +1,121 @@
+__author__	myflask\__init__.py	/^__author__ = 'jql'$/;"	v
+Flask	myflask\testStatic.py	/^from flask import Flask$/;"	i
+app	myflask\testStatic.py	/^app = Flask(__name__,static_folder='assets',static_url_path='\/mylib')$/;"	v
+init_static_folder	myflask\testStatic.py	/^def init_static_folder(app):$/;"	f
+os	myflask\testStatic.py	/^    import os$/;"	i
+v_index	myflask\testStatic.py	/^def v_index():$/;"	f
+Flask	myflask\testflask.py	/^from flask import Flask$/;"	i
+app	myflask\testflask.py	/^app = Flask(__name__)$/;"	v
+book	myflask\testflask.py	/^def book():$/;"	f
+index	myflask\testflask.py	/^def index():$/;"	f
+movie	myflask\testflask.py	/^def movie():$/;"	f
+music	myflask\testflask.py	/^def music():$/;"	f
+request	myflask\testflask.py	/^from flask import request$/;"	i
+v_auth	myflask\testflask.py	/^def v_auth():$/;"	f
+MySQLdb	mysql\MySqlTest.py	/^import MySQLdb$/;"	i
+__author__	mysql\MySqlTest.py	/^__author__ = 'jql'$/;"	v
+conn	mysql\MySqlTest.py	/^    conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='123456',db='own',port=3306)$/;"	v
+count	mysql\MySqlTest.py	/^    count=cur.execute("select * from user")$/;"	v
+cur	mysql\MySqlTest.py	/^    cur=conn.cursor()$/;"	v
+result	mysql\MySqlTest.py	/^    result=cur.fetchone()$/;"	v
+results	mysql\MySqlTest.py	/^    results=cur.fetchmany(5)$/;"	v
+Base	mysql\SQLAlChemy.py	/^Base = declarative_base()$/;"	v
+Column	mysql\SQLAlChemy.py	/^from sqlalchemy import Column, String,Integer,create_engine$/;"	i
+DBSession	mysql\SQLAlChemy.py	/^DBSession = sessionmaker(bind=engine)$/;"	v
+Integer	mysql\SQLAlChemy.py	/^from sqlalchemy import Column, String,Integer,create_engine$/;"	i
+String	mysql\SQLAlChemy.py	/^from sqlalchemy import Column, String,Integer,create_engine$/;"	i
+User	mysql\SQLAlChemy.py	/^class User(Base):$/;"	c
+__author__	mysql\SQLAlChemy.py	/^__author__ = 'jql'$/;"	v
+__tablename__	mysql\SQLAlChemy.py	/^    __tablename__ = 'user'$/;"	v	class:User
+create_engine	mysql\SQLAlChemy.py	/^from sqlalchemy import Column, String,Integer,create_engine$/;"	i
+declarative_base	mysql\SQLAlChemy.py	/^from sqlalchemy.ext.declarative import declarative_base$/;"	i
+engine	mysql\SQLAlChemy.py	/^engine = create_engine('mysql+mysqldb:\/\/root:123456@127.0.0.1:3306\/own')$/;"	v
+session	mysql\SQLAlChemy.py	/^session = DBSession()$/;"	v
+sessionmaker	mysql\SQLAlChemy.py	/^from sqlalchemy.orm import sessionmaker$/;"	i
+user	mysql\SQLAlChemy.py	/^user = session.query(User).filter(User.userid=='5').one()$/;"	v
+userid	mysql\SQLAlChemy.py	/^    userid = Column(Integer,primary_key=True)$/;"	v	class:User
+username	mysql\SQLAlChemy.py	/^    username = Column(String(20))$/;"	v	class:User
+__author__	mysql\__init__.py	/^__author__ = 'jql'$/;"	v
+__author__	ss\__init__.py	/^__author__ = 'jql'$/;"	v
+__author__	test\__init__.py	/^__author__ = 'jql'$/;"	v
+__author__	test\test.py	/^__author__ = 'jql'$/;"	v
+main1	test\test.py	/^def main1():$/;"	f
+os	test\test.py	/^import os,sys$/;"	i
+sys	test\test.py	/^import os,sys$/;"	i
+test	test\test.py	/^def test():$/;"	f
+Child	test\test1.py	/^class Child(Parent): # 定义子类$/;"	c
+Parent	test\test1.py	/^class Parent:        # 定义父类$/;"	c
+__init__	test\test1.py	/^   def __init__(self):$/;"	m	class:Child
+__init__	test\test1.py	/^   def __init__(self):$/;"	m	class:Parent
+c	test\test1.py	/^c = Child()          # 实例化子类$/;"	v
+childMethod	test\test1.py	/^   def childMethod(self):$/;"	m	class:Child
+getAttr	test\test1.py	/^   def getAttr(self):$/;"	m	class:Parent
+parentAttr	test\test1.py	/^   parentAttr = 100$/;"	v	class:Parent
+parentMethod	test\test1.py	/^   def parentMethod(self):$/;"	m	class:Parent
+setAttr	test\test1.py	/^   def setAttr(self, attr):$/;"	m	class:Parent
+__author__	test\testMain.py	/^__author__ = 'jql'$/;"	v
+__author__	tmp\MultiThread.py	/^__author__ = 'jql'$/;"	v
+__init__	tmp\MultiThread.py	/^    def __init__(self, threadID, name, counter):$/;"	m	class:myThread
+exitFlag	tmp\MultiThread.py	/^exitFlag = 0$/;"	v
+myTest	tmp\MultiThread.py	/^    def myTest(self):$/;"	m	class:myThread
+myThread	tmp\MultiThread.py	/^class myThread (threading.Thread):   #继承父类threading.Thread$/;"	c
+print_time	tmp\MultiThread.py	/^def print_time(threadName, delay, counter):$/;"	f
+run	tmp\MultiThread.py	/^    def run(self):                   #把要执行的代码写到run函数里面 线程在创建后会直接运行run函数$/;"	m	class:myThread
+thread1	tmp\MultiThread.py	/^thread1 = myThread(1, "Thread-1", 1)$/;"	v
+thread2	tmp\MultiThread.py	/^thread2 = myThread(2, "Thread-2", 2)$/;"	v
+threading	tmp\MultiThread.py	/^import threading$/;"	i
+time	tmp\MultiThread.py	/^import time$/;"	i
+__author__	tmp\MultiThreadAsy.py	/^__author__ = 'jql'$/;"	v
+__init__	tmp\MultiThreadAsy.py	/^    def __init__(self, threadID, name, counter):$/;"	m	class:myThread
+myThread	tmp\MultiThreadAsy.py	/^class myThread (threading.Thread):$/;"	c
+print_time	tmp\MultiThreadAsy.py	/^def print_time(threadName, delay, counter):$/;"	f
+run	tmp\MultiThreadAsy.py	/^    def run(self):$/;"	m	class:myThread
+thread1	tmp\MultiThreadAsy.py	/^thread1 = myThread(1, "Thread-1", 1)$/;"	v
+thread2	tmp\MultiThreadAsy.py	/^thread2 = myThread(2, "Thread-2", 2)$/;"	v
+threadLock	tmp\MultiThreadAsy.py	/^threadLock = threading.Lock()$/;"	v
+threading	tmp\MultiThreadAsy.py	/^import threading$/;"	i
+threads	tmp\MultiThreadAsy.py	/^threads = []$/;"	v
+time	tmp\MultiThreadAsy.py	/^import time$/;"	i
+People	tmp\People.py	/^class People(object):$/;"	c
+__author__	tmp\People.py	/^__author__ = 'jql'$/;"	v
+__init__	tmp\People.py	/^    def __init__(self,name):$/;"	m	class:People
+printInfo	tmp\People.py	/^    def printInfo(self):$/;"	m	class:People
+__author__	tmp\QueueTest.py	/^__author__ = 'jql'$/;"	v
+__init__	tmp\QueueTest.py	/^    def __init__(self, threadID, name, q):$/;"	m	class:myThread
+exitFlag	tmp\QueueTest.py	/^exitFlag = 0$/;"	v
+exitFlag	tmp\QueueTest.py	/^exitFlag = 1$/;"	v
+myThread	tmp\QueueTest.py	/^class myThread (threading.Thread):$/;"	c
+nameList	tmp\QueueTest.py	/^nameList = ["One", "Two", "Three", "Four", "Five"]$/;"	v
+process_data	tmp\QueueTest.py	/^def process_data(threadName, q):$/;"	f
+queue	tmp\QueueTest.py	/^import queue$/;"	i
+queueLock	tmp\QueueTest.py	/^queueLock = threading.Lock()$/;"	v
+run	tmp\QueueTest.py	/^    def run(self):$/;"	m	class:myThread
+thread	tmp\QueueTest.py	/^    thread = myThread(threadID, tName, workQueue)$/;"	v
+threadID	tmp\QueueTest.py	/^threadID = 1$/;"	v
+threadList	tmp\QueueTest.py	/^threadList = ["Thread-1", "Thread-2", "Thread-3"]$/;"	v
+threading	tmp\QueueTest.py	/^import threading$/;"	i
+threads	tmp\QueueTest.py	/^threads = []$/;"	v
+time	tmp\QueueTest.py	/^import time$/;"	i
+workQueue	tmp\QueueTest.py	/^workQueue = queue.Queue(10)$/;"	v
+__author__	tmp\__init__.py	/^__author__ = 'jql'$/;"	v
+__author__	webCrawler\__init__.py	/^__author__ = 'jql'$/;"	v
+__author__	webCrawler\getJpg.py	/^__author__ = 'jql'$/;"	v
+getHtml	webCrawler\getJpg.py	/^def getHtml(url):$/;"	f
+getImg	webCrawler\getJpg.py	/^def getImg(html):$/;"	f
+html	webCrawler\getJpg.py	/^html = getHtml(urlString2)$/;"	v
+number	webCrawler\getJpg.py	/^number = 10  # 图片收集数量$/;"	v
+os	webCrawler\getJpg.py	/^import os$/;"	i
+path	webCrawler\getJpg.py	/^path = 'img\/'  # 图片存放目录$/;"	v
+re	webCrawler\getJpg.py	/^import re$/;"	i
+save_img	webCrawler\getJpg.py	/^def save_img(url, path, x):$/;"	f
+schedule	webCrawler\getJpg.py	/^def schedule(a, b, c):$/;"	f
+urlString	webCrawler\getJpg.py	/^urlString = "http:\/\/tieba.baidu.com\/p\/2460150866"$/;"	v
+urlString1	webCrawler\getJpg.py	/^urlString1 = "http:\/\/image.baidu.com\/"$/;"	v
+urlString2	webCrawler\getJpg.py	/^urlString2 = "http:\/\/desk.zol.com.cn\/meinv\/"$/;"	v
+urllib	webCrawler\getJpg.py	/^import urllib$/;"	i
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
